@@ -204,6 +204,7 @@ exports.getProducts = (req, res, next) => {
 };
 
 exports.deleteProduct = (req, res, next) => {
+  abc
   const prodId = req.params.productId;
   Product.findById(prodId)
     .then(product => {
